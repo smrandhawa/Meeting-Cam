@@ -11,7 +11,7 @@ Perhaps even a video conference could require a camera-man in case the meeting w
 ## System Overview
 Our system consists of a singular device that detects the sound and move towards the location of the sound. The device consists of an IP-Camera on which 2 Omni-Directional microphones are mounted. Microphones are there for capturing sound input. The device gets the input to the computer in which our algorithm runs as a Java application. The application is responsible for locating the sound source and rotating the camera towards it. Hereis the diagrammatic representation of our system.  
 <p align="center">
-![alt text](https://github.com/Randhawa670/Meeting-Cam/blob/master/SystemOverview.PNG "System Overview")
+<img src="https://github.com/Randhawa670/Meeting-Cam/blob/master/SystemOverview.PNG">
 </p>
 
 As you can see in the diagram above a meeting is being held and one person towards the right of the table is speaking and the camera is being pointed towards him. Now when another person will speak the camera will move towards him.
