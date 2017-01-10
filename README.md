@@ -9,11 +9,14 @@ ongoing and in that meeting discussion is taking place on confidential informati
 Perhaps even a video conference could require a camera-man in case the meeting was between 1 to N or N to N clients. Meeting-Cam aims to provide an automated system of recording such meetings thus removing the need for having a cameraman to be physically present in the room. Meeting-Cam revolves around a device placed on the table that would be able to find the location of the sound and move the camera to point at that location.
 
 ## System Overview
-Our system consists of a singular device that detects the sound and move towards the location of the sound. The device consists of an IP-Camera on which 2 Omni-Directional microphones are mounted. Microphones are there for capturing sound input. The device gets the input to the computer in which our algorithm runs as a Java application. The application is responsible for locating the sound source and rotating the camera towards it.
+Our system consists of a singular device that detects the sound and move towards the location of the sound. The device consists of an IP-Camera on which 2 Omni-Directional microphones are mounted. Microphones are there for capturing sound input. The device gets the input to the computer in which our algorithm runs as a Java application. The application is responsible for locating the sound source and rotating the camera towards it. Hereis the diagrammatic representation of our system. 
+![alt text](https://github.com/Randhawa670/Meeting-Cam/blob/master/SystemOverview.PNG "System Overview")
 
-The following picture is the diagrammatic representation of our system. As you can see in the diagram above a meeting is being held and one person towards the right of the table is speaking and the camera is being pointed towards him. Now when another person will speak the camera will move towards him.
+As you can see in the diagram above a meeting is being held and one person towards the right of the table is speaking and the camera is being pointed towards him. Now when another person will speak the camera will move towards him.
 
 ## System Architecture
+
+![alt text](https://github.com/Randhawa670/Meeting-Cam/blob/master/SystemArchitecture.PNG "System Architecture")
 
 The diagram above shows the high-level architecture of the system which will provide information about the flow of control in the system.
 
@@ -49,6 +52,7 @@ The most famous algorithms that use inter-aural time difference (ITD) as its cor
 #### The Jeffress Model
 Jeffress model is one of the most successful models for explaining the processing of inter aural time differences in the brain.
 In 1948, L. A. Jeffres proposed a hypothetical model of how neurons in the brain could make use of these tiny time differences, illustrated in the figure below:
+![alt text](https://github.com/Randhawa670/Meeting-Cam/blob/master/jeffressmodel.PNG "Jeffress Model")
 
 It consists of two major features: axonal delay lines and coincidence detector neurons. The coincidence detector neurons will (simply put) only fire if both of their inputs are excited simultaneously. Due to the finite running times of action potentials, the axons leading to the coincidence detectors act as delays.
 
