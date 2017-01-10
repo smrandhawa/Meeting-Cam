@@ -69,9 +69,9 @@ One of the implementations of the Jeffress model is the dual delay-line algorith
 #### Correlation in the Time Domain
 Another implementation of the Jeffress model is the simple cross correlation of the input signals recorded from the two microphones. The cross-correlation is a measure of the similarity between two signals (in our case L and R). It works by shifting the signals against each other by the time lag. This approach is also part of the human listening system through which we detect the direction of the sound's source.
 
-
-
 ## Demo
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/Qe0EuPyM0Fk)
 
 
  
