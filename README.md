@@ -71,7 +71,14 @@ Another implementation of the Jeffress model is the simple cross correlation of 
 
 ## Demo
 
-[![Real-Time Demo](https://img.youtube.com/vi/Qe0EuPyM0Fk/0.jpg)](https://www.youtube.com/watch?v=Qe0EuPyM0Fk&feature=youtu.be)
+Please find below two demo's of meeting cam in real time. In first demo, a song on mobile device is used as a sound source and camera follows the mobile phone as it moves by the person. In second demo, a real meeting scenario is replicated and camera follows the active speaker.
+
+### Demo with Mobile Phone
+[![Real-Time Demo 1](https://img.youtube.com/vi/Qe0EuPyM0Fk/0.jpg)](https://www.youtube.com/watch?v=Qe0EuPyM0Fk&feature=youtu.be)
+
+
+### Demo with People 
+[![Real-Time Demo 2](https://img.youtube.com/vi/Qe0EuPyM0Fk/0.jpg)](https://www.youtube.com/watch?v=Qe0EuPyM0Fk&feature=youtu.be)
 
 
  
