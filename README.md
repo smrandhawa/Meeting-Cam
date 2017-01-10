@@ -9,7 +9,8 @@ ongoing and in that meeting discussion is taking place on confidential informati
 Perhaps even a video conference could require a camera-man in case the meeting was between 1 to N or N to N clients. Meeting-Cam aims to provide an automated system of recording such meetings thus removing the need for having a cameraman to be physically present in the room. Meeting-Cam revolves around a device placed on the table that would be able to find the location of the sound and move the camera to point at that location.
 
 ## System Overview
-Our system consists of a singular device that detects the sound and move towards the location of the sound. The device consists of an IP-Camera on which 2 Omni-Directional microphones are mounted. Microphones are there for capturing sound input. The device gets the input to the computer in which our algorithm runs as a Java application. The application is responsible for locating the sound source and rotating the camera towards it. Hereis the diagrammatic representation of our system. 
+Our system consists of a singular device that detects the sound and move towards the location of the sound. The device consists of an IP-Camera on which 2 Omni-Directional microphones are mounted. Microphones are there for capturing sound input. The device gets the input to the computer in which our algorithm runs as a Java application. The application is responsible for locating the sound source and rotating the camera towards it. Hereis the diagrammatic representation of our system.  
+
 ![alt text](https://github.com/Randhawa670/Meeting-Cam/blob/master/SystemOverview.PNG "System Overview")
 
 As you can see in the diagram above a meeting is being held and one person towards the right of the table is speaking and the camera is being pointed towards him. Now when another person will speak the camera will move towards him.
