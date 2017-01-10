@@ -8,5 +8,42 @@ ongoing and in that meeting discussion is taking place on confidential informati
 
 Perhaps even a video conference could require a camera-man in case the meeting was between 1 to N or N to N clients. Meeting-Cam aims to provide an automated system of recording such meetings thus removing the need for having a camera-man to be physically present in the room. Meeting-Cam revolves around a device placed at the table that would be able to find the location of the sound and move the camera to point at that location.
 
+## System Overview
+Our system consists of a singular device that detect the sound and move towards the location of the sound. The device consist of an IP-Camera on which 2 Omni-Directional microphones are mounted. Microphones are there for capturing sound input. The device gets the input to the computer in which our algorithm runs as a Java application. The application is responsible for locating the sound source and rotating the camera towards it.
+
+Following picture is the diagrammatic representation of our system. As you can see in the diagram above a meeting is being held and one person towards the right of the table is speaking and the camera is being pointed towards him. Now when another person will speak the camera will move towards him.
+
+## System Architecture
+
+The diagram above shows the high level architecture of the system which will provide information about the flow of control in system.
+
+As can be seen in the diagram shown above the architecture is quite simple. The external world is a person who is currently speaking. This sound is detected by the microphones and is then passed onto the soundcard which stores it in its buffer. Now here our program comes in, it reads the data from the sound cards buffer and then our algorithm is run on it. We take samples of sound of 62ms and perform the localization on that sample. Our system does also keep track of the previously calculated angle and uses it to adjust the newly calculated angle, this helps us in reducing any error or ignoring a wild change of angle. It also smooth the movement of the camera. Now our program instructs the camera to move a certain degrees so that it points at the location of the person.
+
+The most imortant part for our system is Acoustic Localization or Sound Source Localization. It is also discuSsed in detailed below.
+
+### Sound Source Localization 
+Sound Source localization is the most critical decision part of our system as the functionality of whole system depends on it. There are four common type of approaches that could be used for detecting the sound’s source. Let's discuss them.
+
+#### Approaches
+The four common type of approaches are Inter Aural Time Difference(ITD), Inter Aural Level Difference(ILD), Beam Forming(BF) and Microphone Directivity(MD).
+
+##### Inter Aural Time Difference (ITD)  
+The most common sound source localization technique is inter aural time difference (ITD). Also known as synonyms for this technique are Inter aural Phase Difference (IPD) or Time Difference of Arrival (TDA or TDOA). ITDs caused by the different propagation times as the sound wave travel from the source to both ears. For e.g. a source near to the left, the sound wave will reach the left ear slightly before it reaches the right ear. This time differece between two signals gives the estimate of the direction of the sound source.
+
+##### Inter Aural Level Difference (ITD)  
+Interaural level differences (ILD) are caused by the acoustic "shadow" of the head. For e.g. a source to the left, the sound wave will arrive at the left ear slightly louder than at the right ear. The ILD is completely based on the relative energy difference between two signals of a microphone pair. In contrast to most other techniques the phase of the received signals are of no importance and can therefore be neglected. Another often heard synonym for this technique is Inter-Aural Intensity Difference (IID).
+
+##### Beam Forming (BF)  
+Beam forming (BF) is a widely applied and well-known technique. It is based on inter-Aural Time differences and therefore strongly related to the classical ITD approach. The main difference to ITD is that there is no exact calculation but a position estimation by directing the beam former through space and look up for the maximal output.
+
+##### Microphone Directivity (MD)  
+Another approach is to use highly directional microphones for sound localization. Each microphones covers a specific region of the room. By looking for the maximal signal received by the microphones one can locate the sound source within the corresponding sector. Additional structures as shown in chapter may be used for better results. Another similar approach may be to have the highly directional microphones movable and having them scan the room for a sound source. Then its position can be computed based on the geometrical information available from the aligned microphones. These approaches exist but the problem with these ideas is that resolution is generally low.  
+
+##### Chosen Approach
+Of all the approaches stated above available for sound source localization, inter-aural time differences are by far the easiest to use in a technical implementation. The only parameter that has to be known is the distance between the microphones (as long as there is no obstruction between them). 
+Inter aural level differences, on the other hand, require some sort of artificial "head" between the microphones. This setup then has to be calibrated, i.e., the head related transfer function (HRTF) and ILD generated by a specific setup have to be measured, which is a rather tedious and elaborate process. Furthermore, any change in the artificial "head" or the microphones entails a recalibration. 
+
+## Demo
+
 
  
