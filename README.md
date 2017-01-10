@@ -78,7 +78,7 @@ Please find below two demo's of meeting cam in real time. In first demo, a song 
 
 
 ### Demo with People 
-[![Real-Time Demo 2](https://img.youtube.com/vi/Qe0EuPyM0Fk/0.jpg)](https://www.youtube.com/watch?v=Qe0EuPyM0Fk&feature=youtu.be)
+[![Real-Time Demo 2](https://img.youtube.com/vi/VPQ-8oYVkZg/0.jpg)](https://www.youtube.com/watch?v=VPQ-8oYVkZg)
 
 
  
