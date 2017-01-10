@@ -17,8 +17,9 @@ Our system consists of a singular device that detects the sound and move towards
 As you can see in the diagram above a meeting is being held and one person towards the right of the table is speaking and the camera is being pointed towards him. Now when another person will speak the camera will move towards him.
 
 ## System Architecture
-
-![alt text](https://github.com/Randhawa670/Meeting-Cam/blob/master/SystemArchitecture.PNG "System Architecture")
+<p align="center">
+<img src="https://github.com/Randhawa670/Meeting-Cam/blob/master/SystemArchitecture.PNG">
+</p>
 
 The diagram above shows the high-level architecture of the system which will provide information about the flow of control in the system.
 
@@ -54,7 +55,9 @@ The most famous algorithms that use inter-aural time difference (ITD) as its cor
 #### The Jeffress Model
 Jeffress model is one of the most successful models for explaining the processing of inter aural time differences in the brain.
 In 1948, L. A. Jeffres proposed a hypothetical model of how neurons in the brain could make use of these tiny time differences, illustrated in the figure below:
-![alt text](https://github.com/Randhawa670/Meeting-Cam/blob/master/jeffressmodel.PNG "Jeffress Model")
+<p align="center">
+<img src="https://github.com/Randhawa670/Meeting-Cam/blob/master/jeffressmodel.PNG">
+</p>
 
 It consists of two major features: axonal delay lines and coincidence detector neurons. The coincidence detector neurons will (simply put) only fire if both of their inputs are excited simultaneously. Due to the finite running times of action potentials, the axons leading to the coincidence detectors act as delays.
 
